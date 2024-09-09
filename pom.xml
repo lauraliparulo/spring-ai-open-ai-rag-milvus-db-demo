@@ -12,7 +12,7 @@
     <artifactId>spring-ai-rag-expert</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>spring-ai-rag-expert</name>
-    <description>spring-ai-rag-expert</description>
+    <description>spring-ai-rag-expert-embedded</description>
     <properties>
         <java.version>21</java.version>
         <spring-ai.version>0.8.1</spring-ai.version>

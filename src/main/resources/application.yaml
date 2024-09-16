@@ -28,5 +28,6 @@ sfg:
     vectorStorePath: /tmp/vectorstore.json
     documentsToLoad:
       - classpath:/movies500Trimmed.csv
-      - https://yamahaoutboards.com/outboards/350-150-hp/in-line-4/f150-(i4)/pb_spt_open_212_f150xb_9-10-2020-occ
+      - https://editorial.rottentomatoes.com/guide/best-new-movies/
+      - https://www.forbes.com/sites/entertainment/article/greatest-actors-of-all-time/
 # - https

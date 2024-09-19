@@ -1,13 +1,14 @@
 package de.demo.spring.ai.services;
 
-import lombok.RequiredArgsConstructor;
-import org.springframework.ai.chat.ChatClient;
-import org.springframework.ai.chat.ChatResponse;
+import java.util.List;
+import java.util.Map;
+
+import org.springframework.ai.chat.model.ChatModel;
+import org.springframework.ai.chat.model.ChatResponse;
 import org.springframework.ai.chat.prompt.Prompt;
 import org.springframework.ai.chat.prompt.PromptTemplate;
 import org.springframework.ai.document.Document;
 import org.springframework.ai.vectorstore.SearchRequest;
-import org.springframework.ai.vectorstore.SimpleVectorStore;
 import org.springframework.ai.vectorstore.VectorStore;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.core.io.Resource;
@@ -15,9 +16,7 @@ import org.springframework.stereotype.Service;
 
 import de.demo.spring.ai.model.Answer;
 import de.demo.spring.ai.model.Question;
-
-import java.util.List;
-import java.util.Map;
+import lombok.RequiredArgsConstructor;
 
 /**
  * Created by jt, Spring Framework Guru.
@@ -26,7 +25,7 @@ import java.util.Map;
 @Service
 public class OpenAIServiceImpl implements OpenAIService {
 
-    final ChatClient chatClient;
+    final ChatModel chatClient;
     final VectorStore vectorStore;
 
     @Value("classpath:/templates/rag-prompt-template-meta.st")
